@@ -15,9 +15,9 @@ class _ResponsiveState extends State<Responsive> {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (BuildContext, BoxConstraints) {
       if (BoxConstraints.maxWidth > 600) {
-        return widget.myweb();
+        return widget.myweb;
       } else {
-        return widget.mymobile();
+        return widget.mymobile;
       }
     });
   }
