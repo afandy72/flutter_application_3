@@ -14,7 +14,7 @@ class _WebScreenState extends State<MobileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Web Screen"),
+        title: Text("Mobile Screen"),
       ),
     );
     ;
