@@ -37,25 +37,21 @@ class _MobileScreen extends State<MobileScreen> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.search,
-                  color: Color.fromARGB(255, 255, 255, 255),
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.add_box_outlined,
-                  color: Color.fromARGB(255, 255, 255, 255),
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.favorite,
-                  color: Color.fromARGB(255, 255, 255, 255),
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person_outline,
-                  color: Color.fromARGB(255, 255, 255, 255),
                 ),
                 label: ""),
           ]),
@@ -67,6 +63,9 @@ class _MobileScreen extends State<MobileScreen> {
           Home(),
           Search(),
           AddPost(),
+          Center(
+            child: Text("No Thing Yet"),
+          ),
           Profile(),
         ],
       ),
