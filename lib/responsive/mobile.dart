@@ -18,9 +18,14 @@ class _MobileScreen extends State<MobileScreen> {
         title: Text("Mobile Screen"),
       ),
       bottomNavigationBar:
-          CupertinoTabBar(backgroundColor: Colors.black, items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+          CupertinoTabBar(backgroundColor: Colors.black,
+          on
+           items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home_rounded), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.add_box_outlined), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.favorite), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: ""),
       ]),
     );
     ;
