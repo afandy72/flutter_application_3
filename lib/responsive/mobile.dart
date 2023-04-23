@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -16,7 +17,7 @@ class _MobileScreen extends State<MobileScreen> {
       appBar: AppBar(
         title: Text("Mobile Screen"),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
+      bottomNavigationBar: CupertinoTabBar(items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
       ]),
