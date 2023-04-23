@@ -17,16 +17,18 @@ class _MobileScreen extends State<MobileScreen> {
       appBar: AppBar(
         title: Text("Mobile Screen"),
       ),
-      bottomNavigationBar:
-          CupertinoTabBar(backgroundColor: Colors.black,
-          on
-           items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home_rounded), label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.add_box_outlined), label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.favorite), label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: ""),
-      ]),
+      bottomNavigationBar: CupertinoTabBar(
+          backgroundColor: Colors.black,
+          onTap: (index) {},
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home_rounded), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.add_box_outlined), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.favorite), label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person_outline), label: ""),
+          ]),
     );
     ;
   }
