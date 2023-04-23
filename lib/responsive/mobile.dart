@@ -29,7 +29,11 @@ class _MobileScreen extends State<MobileScreen> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.person_outline), label: ""),
           ]),
+      body: PageView(
+        onPageChanged: (index) {},
+      ),
     );
+
     ;
   }
 }
