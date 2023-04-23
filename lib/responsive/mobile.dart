@@ -15,6 +15,7 @@ class MobileScreen extends StatefulWidget {
 }
 
 class _MobileScreen extends State<MobileScreen> {
+  final PageController _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +24,9 @@ class _MobileScreen extends State<MobileScreen> {
       ),
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: Colors.black,
-          onTap: (index) {},
+          onTap: (index) {
+            _pageController.jumpToPage(index);
+          },
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
@@ -59,6 +62,7 @@ class _MobileScreen extends State<MobileScreen> {
       body: PageView(
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
+        controller: _pageController,
         children: [
           Home(),
           Search(),
