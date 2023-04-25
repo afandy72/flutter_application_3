@@ -56,7 +56,9 @@ class _MobileScreen extends State<MobileScreen> {
                 label: ""),
           ]),
       body: PageView(
-        onPageChanged: (index) {},
+        onPageChanged: (index) {
+          _pageController.jumpToPage(index);
+        },
         physics: NeverScrollableScrollPhysics(),
         controller: _pageController,
         children: [
