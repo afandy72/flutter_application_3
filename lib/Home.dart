@@ -8,7 +8,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: MediaQuery.of(context).size.width > 600
             ? Text("Web Screen")
             : Text("Mobile Screen"),

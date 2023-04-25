@@ -29,6 +29,7 @@ class _MobileScreen extends State<MobileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: Colors.black,
           onTap: (index) {
@@ -80,7 +81,9 @@ class _MobileScreen extends State<MobileScreen> {
           Search(),
           AddPost(),
           Center(
-            child: Text("No Thing Yet"),
+            child: Text(
+              "No Thing Yet",
+            ),
           ),
           Profile(),
         ],
