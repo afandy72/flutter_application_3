@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Responsive(
+        mymobile: MobileScreen(),
+        myweb: WebScreen(),
+      ),
     );
   }
 }

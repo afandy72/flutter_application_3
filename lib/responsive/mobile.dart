@@ -17,21 +17,28 @@ class MobileScreen extends StatefulWidget {
 class _MobileScreen extends State<MobileScreen> {
   final PageController _pageController = PageController();
   @override
+  void dispose() {
+    _pageController.dispose();
+  }
+
+  Color colora = Color.fromARGB(255, 255, 255, 255);
+  int curunt = 2;
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Mobile Screen"),
-      ),
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: Colors.black,
           onTap: (index) {
             _pageController.jumpToPage(index);
+            curunt = index;
           },
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home_rounded,
-                  color: Color.fromARGB(255, 255, 255, 255),
+                  color:
+                      curunt == 0 ? Color.fromARGB(255, 255, 255, 255) : null,
                 ),
                 label: ""),
             BottomNavigationBarItem(
@@ -72,7 +79,5 @@ class _MobileScreen extends State<MobileScreen> {
         ],
       ),
     );
-
-    ;
   }
 }
