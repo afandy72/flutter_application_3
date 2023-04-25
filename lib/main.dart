@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_3/Home.dart';
 import 'package:flutter_application_3/responsive/mobile.dart';
 import 'package:flutter_application_3/responsive/responsive.dart';
+import 'package:flutter_application_3/responsive/task.dart';
 import 'package:flutter_application_3/responsive/web.dart';
 
 void main() {
@@ -16,11 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      home: Responsive(
-        mymobile: MobileScreen(),
-        myweb: WebScreen(),
-      ),
+      home: MyWidget(),
     );
   }
 }
