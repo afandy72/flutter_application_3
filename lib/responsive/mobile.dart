@@ -59,7 +59,7 @@ class _MobileScreen extends State<MobileScreen> {
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.favorite,
+                  Icons.play_arrow,
                   color: curunt == 3 ? colora : colorb,
                 ),
                 label: ""),
