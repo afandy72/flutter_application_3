@@ -6,6 +6,7 @@ import 'package:flutter_application_3/Screens/add_photo.dart';
 import 'package:flutter_application_3/Screens/home.dart';
 import 'package:flutter_application_3/Screens/profile.dart';
 import 'package:flutter_application_3/Screens/search.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MobileScreen extends StatefulWidget {
   const MobileScreen({super.key});
