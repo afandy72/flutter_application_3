@@ -15,7 +15,14 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.send))],
+        actions: [
+          ico
+          Padding(
+            padding: const EdgeInsets.only(right: 12),
+            child: ImageIcon(AssetImage(
+                "assets/img/socialmedia-social-media-logo-facebook-messenger-icon-329837-256.png")),
+          )
+        ],
         backgroundColor: Colors.black,
         title: SvgPicture.asset(
           "assets/img/Instagram_logo.svg",
