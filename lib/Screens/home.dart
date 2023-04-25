@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         actions: [
-          ico
+          IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
           Padding(
             padding: const EdgeInsets.only(right: 12),
             child: ImageIcon(AssetImage(
