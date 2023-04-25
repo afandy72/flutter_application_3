@@ -40,36 +40,31 @@ class _MobileScreen extends State<MobileScreen> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home_rounded,
-                  color:
-                      curunt == 0 ? colora : Color.fromARGB(255, 155, 153, 153),
+                  color: curunt == 0 ? colora : colorb,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.search,
-                  color:
-                      curunt == 1 ? colora : Color.fromARGB(255, 155, 153, 153),
+                  color: curunt == 1 ? colora : colorb,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.add_box_outlined,
-                  color:
-                      curunt == 2 ? colora : Color.fromARGB(255, 155, 153, 153),
+                  color: curunt == 2 ? colora : colorb,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.favorite,
-                  color:
-                      curunt == 3 ? colora : Color.fromARGB(255, 155, 153, 153),
+                  color: curunt == 3 ? colora : colorb,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person_outline,
-                  color:
-                      curunt == 4 ? colora : Color.fromARGB(255, 155, 153, 153),
+                  color: curunt == 4 ? colora : colorb,
                 ),
                 label: ""),
           ]),
