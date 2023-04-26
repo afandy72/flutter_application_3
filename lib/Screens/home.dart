@@ -171,13 +171,35 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 5, 5, 5),
-            width: double.infinity,
-            child: Text(
-              "10 likes",
-              style: TextStyle(fontSize: 15),
-            ),
+          Row(
+            children: [
+              Stack(
+                children: [
+                  CircleAvatar(
+                    radius: 12,
+                    backgroundImage: AssetImage(
+                      "assets/img/road-1072821_960_720.jpg",
+                    ),
+                  ),
+                  CircleAvatar(
+                    radius: 12,
+                    backgroundImage: AssetImage(
+                      "assets/img/road-1072821_960_720.jpg",
+                    ),
+                  ),
+                ],
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(10, 5, 5, 5),
+                child: Text(
+                  "10 likes",
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 5,
           ),
           Row(
             children: [Text("Ahmed_22")],
