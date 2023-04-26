@@ -216,12 +216,15 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-          Text(
-            "View all 23 comments",
-            style: TextStyle(
-              color: Color.fromARGB(255, 58, 58, 58),
+          Container(
+            margin: EdgeInsets.fromLTRB(10, 5, 5, 5),
+            width: double.infinity,
+            child: Text(
+              "View all 23 comments",
+              style: TextStyle(
+                  color: Color.fromARGB(255, 124, 124, 124), fontSize: 15),
             ),
-          )
+          ),
         ],
       ),
     );
