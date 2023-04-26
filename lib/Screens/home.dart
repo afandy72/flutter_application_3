@@ -22,11 +22,20 @@ class _HomeState extends State<Home> {
               child: Stack(
                 children: [
                   Container(
-                    height: 15,
-                    width: 15,
+                    child: Text(
+                      "4",
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    padding: EdgeInsets.only(
+                      left: 4,
+                    ),
+                    height: 20,
+                    width: 20,
                     decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(12)),
+                        color: Colors.red, shape: BoxShape.circle),
                   ),
                   ImageIcon(AssetImage(
                       "assets/img/socialmedia-social-media-logo-facebook-messenger-icon-329837-256.png")),
