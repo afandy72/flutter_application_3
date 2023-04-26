@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -90,13 +91,13 @@ class _HomeState extends State<Home> {
               children: [
                 CircleAvatar(
                   backgroundImage:
-                      AssetImage("assets/img/road-1072821_960_720.jpeg"),
+                      AssetImage("assets/img/road-1072821_960_720.jpg"),
                 ),
                 SizedBox(
                   width: 17,
                 ),
                 Text(
-                  "_afandy72",
+                  "user_name",
                   style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
                 ),
                 Spacer(),
@@ -108,7 +109,33 @@ class _HomeState extends State<Home> {
             height: 12,
           ),
           Image.asset(
-              "assets/img/299850199_439821258168815_7602401598176668923_n.jpeg"),
+              "assets/img/299850199_439821258168815_7602401598176668923_n.jpg"),
+          SizedBox(
+            width: 12,
+          ),
+          Row(
+            children: [
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.favorite_border_outlined,
+                    size: 28,
+                  )),
+              SizedBox(
+                width: 3,
+              ),
+              new Icon(
+                FontAwesomeIcons.comment,
+              ),
+              SizedBox(
+                width: 12,
+              ),
+              new Icon(
+                FontAwesomeIcons.paperPlane,
+              ),
+              Spacer(),
+            ],
+          )
         ],
       ),
     );
