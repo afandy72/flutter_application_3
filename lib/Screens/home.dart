@@ -19,34 +19,46 @@ class _HomeState extends State<Home> {
           title: SvgPicture.asset(
             "assets/img/Instagram_logo.svg",
             width: 150,
+            height: 60,
             color: Colors.white,
           ),
           actions: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
+            IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.favorite_border,
+                  size: 30,
+                )),
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(right: 12.0),
+                  padding: const EdgeInsets.only(right: 12.0, bottom: 12),
                   child: Stack(
                     children: [
-                      Container(
-                        child: Text(
-                          "4",
-                          style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        padding: EdgeInsets.all(
-                          4,
-                        ),
-                        height: 20,
-                        width: 20,
-                        decoration: BoxDecoration(
-                            color: Colors.red, shape: BoxShape.circle),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10.0),
+                        child: ImageIcon(AssetImage(
+                            "assets/img/socialmedia-social-media-logo-facebook-messenger-icon-329837-256.png")),
                       ),
-                      ImageIcon(AssetImage(
-                          "assets/img/socialmedia-social-media-logo-facebook-messenger-icon-329837-256.png")),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          left: 15.0,
+                        ),
+                        child: Container(
+                          child: Text(
+                            "4",
+                            style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600),
+                          ),
+                          padding: EdgeInsets.only(left: 5, bottom: 1),
+                          height: 20,
+                          width: 20,
+                          decoration: BoxDecoration(
+                              color: Colors.red, shape: BoxShape.circle),
+                        ),
+                      ),
                     ],
                   ),
                 ),
