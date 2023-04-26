@@ -217,12 +217,20 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(10, 5, 5, 5),
+            margin: EdgeInsets.fromLTRB(12, 0, 5, 5),
             width: double.infinity,
             child: Text(
               "View all 23 comments",
               style: TextStyle(
                   color: Color.fromARGB(255, 124, 124, 124), fontSize: 15),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.fromLTRB(12, 10, 5, 5),
+            width: double.infinity,
+            child: Text(
+              "user_name2  Beautiful",
+              style: TextStyle(color: Colors.white, fontSize: 15),
             ),
           ),
         ],
