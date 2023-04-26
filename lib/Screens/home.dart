@@ -18,27 +18,43 @@ class _HomeState extends State<Home> {
           backgroundColor: Colors.black,
           title: SvgPicture.asset(
             "assets/img/Instagram_logo.svg",
-            width: 150,
-            height: 60,
+            width: 70,
+            height: 55,
             color: Colors.white,
           ),
           actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.favorite_border,
-                  size: 30,
-                )),
+            Stack(children: [
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.favorite_border,
+                    size: 30,
+                  )),
+              Padding(
+                padding: const EdgeInsets.only(left: 30.0, top: 10),
+                child: Container(
+                  height: 10,
+                  width: 10,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 243, 16, 0),
+                      shape: BoxShape.circle),
+                ),
+              ),
+            ]),
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(right: 12.0, bottom: 12),
+                  padding:
+                      const EdgeInsets.only(right: 12.0, bottom: 12, left: 12),
                   child: Stack(
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 10.0),
-                        child: ImageIcon(AssetImage(
-                            "assets/img/socialmedia-social-media-logo-facebook-messenger-icon-329837-256.png")),
+                        child: ImageIcon(
+                          AssetImage(
+                              "assets/img/socialmedia-social-media-logo-facebook-messenger-icon-329837-256.png"),
+                          color: Colors.white,
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
@@ -46,13 +62,13 @@ class _HomeState extends State<Home> {
                         ),
                         child: Container(
                           child: Text(
-                            "4",
+                            "3",
                             style: TextStyle(
-                                fontSize: 17,
+                                fontSize: 15,
                                 color: Colors.white,
-                                fontWeight: FontWeight.w600),
+                                fontWeight: FontWeight.w500),
                           ),
-                          padding: EdgeInsets.only(left: 5, bottom: 1),
+                          padding: EdgeInsets.only(left: 6, top: 1),
                           height: 20,
                           width: 20,
                           decoration: BoxDecoration(

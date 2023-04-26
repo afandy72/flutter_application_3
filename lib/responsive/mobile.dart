@@ -63,10 +63,10 @@ class _MobileScreen extends State<MobileScreen> {
                   color: curunt == 3 ? colora : colorb,
                 ),
                 label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person_outline,
-                  color: curunt == 4 ? colora : colorb,
+            const BottomNavigationBarItem(
+                icon: CircleAvatar(
+                  backgroundImage: AssetImage(
+                      "assets/img/WhatsApp Image 2023-04-26 at 12.38.25 PM.jpeg"),
                 ),
                 label: ""),
           ]),
