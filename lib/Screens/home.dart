@@ -171,7 +171,14 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-          Container(child: Text("10 likes"))
+          Container(
+            margin: EdgeInsets.fromLTRB(10, 5, 5, 5),
+            width: double.infinity,
+            child: Text(
+              "10 likes",
+              style: TextStyle(fontSize: 15),
+            ),
+          )
         ],
       ),
     );
