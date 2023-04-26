@@ -171,7 +171,10 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-          Text("10 like")
+          Padding(
+            padding: const EdgeInsets.only(right: 350.0),
+            child: Text("10 like"),
+          )
         ],
       ),
     );
