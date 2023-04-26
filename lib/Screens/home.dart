@@ -89,21 +89,26 @@ class _HomeState extends State<Home> {
             child: Row(
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage(
-                      "assets/img/WhatsApp Image 2023-04-26 at 12.34.24 PM.jpeg"),
+                  backgroundImage:
+                      AssetImage("assets/img/road-1072821_960_720.jpeg"),
                 ),
                 SizedBox(
                   width: 17,
                 ),
                 Text(
-                  "user name",
+                  "_afandy72",
                   style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
                 ),
                 Spacer(),
                 IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
               ],
             ),
-          )
+          ),
+          SizedBox(
+            height: 12,
+          ),
+          Image.asset(
+              "assets/img/299850199_439821258168815_7602401598176668923_n.jpeg"),
         ],
       ),
     );
