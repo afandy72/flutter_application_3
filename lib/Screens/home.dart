@@ -133,7 +133,19 @@ class _HomeState extends State<Home> {
               new Icon(
                 FontAwesomeIcons.paperPlane,
               ),
-              Spacer(),
+              Container(
+                height: 10,
+                width: 10,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 243, 16, 0),
+                    shape: BoxShape.circle),
+              ),
+              SizedBox(
+                width: 200,
+              ),
+              new Icon(
+                FontAwesomeIcons.bookmark,
+              ),
             ],
           )
         ],
