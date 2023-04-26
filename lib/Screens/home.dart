@@ -233,6 +233,27 @@ class _HomeState extends State<Home> {
               style: TextStyle(color: Colors.white, fontSize: 15),
             ),
           ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 30.0, top: 10),
+                child: Container(
+                  height: 20,
+                  width: 3,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 124, 124, 124),
+                      shape: BoxShape.rectangle),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(12, 5, 5, 5),
+                child: Text(
+                  "user_name  Thanks",
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
