@@ -236,9 +236,9 @@ class _HomeState extends State<Home> {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 30.0, top: 10),
+                padding: const EdgeInsets.only(left: 30.0, top: 7),
                 child: Container(
-                  height: 20,
+                  height: 25,
                   width: 3,
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 124, 124, 124),
@@ -246,7 +246,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.fromLTRB(12, 5, 5, 5),
+                margin: EdgeInsets.fromLTRB(12, 10, 5, 5),
                 child: Text(
                   "user_name  Thanks",
                   style: TextStyle(color: Colors.white, fontSize: 15),
