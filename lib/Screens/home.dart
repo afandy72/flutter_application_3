@@ -170,6 +170,10 @@ class _HomeState extends State<Home> {
                 FontAwesomeIcons.bookmark,
               ),
             ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 350.0),
+            child: Text("10 like"),
           )
         ],
       ),
