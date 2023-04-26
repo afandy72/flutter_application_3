@@ -133,15 +133,38 @@ class _HomeState extends State<Home> {
               new Icon(
                 FontAwesomeIcons.paperPlane,
               ),
+              SizedBox(
+                width: 75,
+              ),
               Container(
-                height: 10,
-                width: 10,
+                height: 8,
+                width: 8,
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 243, 16, 0),
+                    color: Color.fromARGB(255, 29, 38, 163),
                     shape: BoxShape.circle),
               ),
               SizedBox(
-                width: 200,
+                width: 5,
+              ),
+              Container(
+                height: 8,
+                width: 8,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 58, 58, 58),
+                    shape: BoxShape.circle),
+              ),
+              SizedBox(
+                width: 5,
+              ),
+              Container(
+                height: 8,
+                width: 8,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 58, 58, 58),
+                    shape: BoxShape.circle),
+              ),
+              SizedBox(
+                width: 160,
               ),
               new Icon(
                 FontAwesomeIcons.bookmark,
