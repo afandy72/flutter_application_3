@@ -44,40 +44,28 @@ class _HomeState extends State<Home> {
           ]),
           Row(
             children: [
-              Padding(
-                padding:
-                    const EdgeInsets.only(right: 12.0, bottom: 12, left: 12),
-                child: Stack(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0),
-                      child: ImageIcon(
-                        AssetImage(
-                            "assets/img/socialmedia-social-media-logo-facebook-messenger-icon-329837-256.png"),
-                        color: Colors.white,
-                      ),
+              Stack(
+                children: [
+                  ImageIcon(
+                    AssetImage(
+                        "assets/img/socialmedia-social-media-logo-facebook-messenger-icon-329837-256.png"),
+                    color: Colors.white,
+                  ),
+                  Container(
+                    child: Text(
+                      "3",
+                      style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        left: 15.0,
-                      ),
-                      child: Container(
-                        child: Text(
-                          "3",
-                          style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w500),
-                        ),
-                        padding: EdgeInsets.only(left: 6, top: 1),
-                        height: 20,
-                        width: 20,
-                        decoration: BoxDecoration(
-                            color: Colors.red, shape: BoxShape.circle),
-                      ),
-                    ),
-                  ],
-                ),
+                    padding: EdgeInsets.only(left: 6, top: 1),
+                    height: 20,
+                    width: 20,
+                    decoration: BoxDecoration(
+                        color: Colors.red, shape: BoxShape.circle),
+                  ),
+                ],
               ),
             ],
           ),
