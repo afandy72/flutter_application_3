@@ -118,7 +118,8 @@ class _HomeState extends State<Home> {
               IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.favorite_border_outlined,
+                    color: Colors.red,
+                    Icons.favorite,
                     size: 28,
                   )),
               SizedBox(
@@ -175,16 +176,22 @@ class _HomeState extends State<Home> {
             children: [
               Stack(
                 children: [
-                  CircleAvatar(
-                    radius: 12,
-                    backgroundImage: AssetImage(
-                      "assets/img/road-1072821_960_720.jpg",
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25.0),
+                    child: CircleAvatar(
+                      radius: 12,
+                      backgroundImage: AssetImage(
+                        "assets/img/road-1072821_960_720.jpg",
+                      ),
                     ),
                   ),
-                  CircleAvatar(
-                    radius: 12,
-                    backgroundImage: AssetImage(
-                      "assets/img/road-1072821_960_720.jpg",
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12.0),
+                    child: CircleAvatar(
+                      radius: 12,
+                      backgroundImage: AssetImage(
+                        "assets/img/WhatsApp Image 2023-04-26 at 12.38.25 PM.jpeg",
+                      ),
                     ),
                   ),
                 ],
@@ -192,17 +199,22 @@ class _HomeState extends State<Home> {
               Container(
                 margin: EdgeInsets.fromLTRB(10, 5, 5, 5),
                 child: Text(
-                  "10 likes",
+                  " Liked by user_name2 and 55 others ",
                   style: TextStyle(fontSize: 15),
                 ),
               ),
             ],
           ),
-          SizedBox(
-            height: 5,
-          ),
-          Row(
-            children: [Text("Ahmed_22")],
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              children: [
+                Text(
+                  "user_name  Natural",
+                  style: TextStyle(fontSize: 17),
+                )
+              ],
+            ),
           )
         ],
       ),
