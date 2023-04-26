@@ -215,7 +215,8 @@ class _HomeState extends State<Home> {
                 )
               ],
             ),
-          )
+          ),
+          Text("View all 23 comments")
         ],
       ),
     );
