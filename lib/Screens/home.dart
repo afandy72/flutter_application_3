@@ -52,6 +52,7 @@ class _HomeState extends State<Home> {
                     color: Colors.white,
                   ),
                   Container(
+                    margin: EdgeInsets.fromLTRB(5, 5, 5, 10),
                     child: Text(
                       "3",
                       style: TextStyle(
