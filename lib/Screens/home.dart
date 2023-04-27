@@ -108,6 +108,74 @@ class _HomeState extends State<Home> {
           SizedBox(
             height: 12,
           ),
+          Image.asset(
+            "assets/img/299850199_439821258168815_7602401598176668923_n.jpg",
+            height: MediaQuery.of(context).size.height * 0.40,
+            fit: BoxFit.cover,
+            width: double.infinity,
+          ),
+          SizedBox(
+            width: 12,
+          ),
+          Row(
+            children: [
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    color: Colors.red,
+                    Icons.favorite,
+                    size: 28,
+                  )),
+              SizedBox(
+                width: 3,
+              ),
+              new Icon(
+                FontAwesomeIcons.comment,
+              ),
+              SizedBox(
+                width: 12,
+              ),
+              new Icon(
+                FontAwesomeIcons.paperPlane,
+              ),
+              SizedBox(
+                width: 75,
+              ),
+              Container(
+                height: 8,
+                width: 8,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 50, 139, 255),
+                    shape: BoxShape.circle),
+              ),
+              SizedBox(
+                width: 5,
+              ),
+              Container(
+                height: 8,
+                width: 8,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 58, 58, 58),
+                    shape: BoxShape.circle),
+              ),
+              SizedBox(
+                width: 5,
+              ),
+              Container(
+                height: 8,
+                width: 8,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 58, 58, 58),
+                    shape: BoxShape.circle),
+              ),
+              SizedBox(
+                width: 160,
+              ),
+              new Icon(
+                FontAwesomeIcons.bookmark,
+              ),
+            ],
+          ),
           Row(
             children: [
               Stack(
