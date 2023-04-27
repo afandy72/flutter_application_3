@@ -110,7 +110,8 @@ class _HomeState extends State<Home> {
           ),
           Image.asset(
             "assets/img/299850199_439821258168815_7602401598176668923_n.jpg",
-            height: MediaQuery.of(context).size.height * 0.25,
+            height: MediaQuery.of(context).size.height * 0.40,
+            width: double.infinity,
           ),
           SizedBox(
             width: 12,
