@@ -271,7 +271,7 @@ class _HomeState extends State<Home> {
                 Container(
                   margin: EdgeInsets.fromLTRB(12, 10, 5, 5),
                   child: Text(
-                    " Add comment...",
+                    " Add a comment...",
                     style: TextStyle(
                         color: Color.fromARGB(255, 124, 124, 124),
                         fontSize: 15),
@@ -279,7 +279,30 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10.0, top: 2),
+            child: Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 10, 5, 5),
+                  child: Text(
+                    "2 days ago  .  ",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 124, 124, 124),
+                        fontSize: 13),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 10, 5, 5),
+                  child: Text(
+                    "See translation",
+                    style: TextStyle(color: Colors.white, fontSize: 13),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
