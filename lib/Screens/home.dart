@@ -243,7 +243,7 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.only(left: 30.0, top: 7),
                 child: Container(
                   height: 25,
-                  width: 3,
+                  width: 2,
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 124, 124, 124),
                       shape: BoxShape.rectangle),
@@ -272,7 +272,9 @@ class _HomeState extends State<Home> {
                   margin: EdgeInsets.fromLTRB(12, 10, 5, 5),
                   child: Text(
                     " Add comment...",
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 124, 124, 124),
+                        fontSize: 15),
                   ),
                 ),
               ],
