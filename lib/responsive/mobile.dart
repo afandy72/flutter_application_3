@@ -32,7 +32,12 @@ class _MobileScreen extends State<MobileScreen> {
       backgroundColor: Colors.black,
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: Colors.black,
-          onTap: (index) {},
+          onTap: (index) {
+            _pageController.jumpToPage(index);
+            setState(() {
+              curunt = index;
+            });
+          },
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
