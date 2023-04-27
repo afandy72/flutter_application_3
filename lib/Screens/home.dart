@@ -253,6 +253,16 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ],
+          ),
+          Row(
+            children: [
+              CircleAvatar(
+                radius: 12,
+                backgroundImage: AssetImage(
+                  "assets/img/WhatsApp Image 2023-04-26 at 12.38.25 PM.jpeg",
+                ),
+              ),
+            ],
           )
         ],
       ),
