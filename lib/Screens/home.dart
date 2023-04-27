@@ -259,13 +259,20 @@ class _HomeState extends State<Home> {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.only(left: 25.0, top: 2),
             child: Row(
               children: [
                 CircleAvatar(
                   radius: 12,
                   backgroundImage: AssetImage(
                     "assets/img/WhatsApp Image 2023-04-26 at 12.38.25 PM.jpeg",
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(12, 10, 5, 5),
+                  child: Text(
+                    " Add comment...",
+                    style: TextStyle(color: Colors.white, fontSize: 15),
                   ),
                 ),
               ],
