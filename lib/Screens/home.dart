@@ -17,6 +17,12 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
+        title: SvgPicture.asset(
+          "assets/img/Instagram_logo.svg",
+          width: 70,
+          height: 55,
+          color: Colors.white,
+        ),
         actions: [
           Stack(children: [
             IconButton(
