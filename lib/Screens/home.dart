@@ -69,7 +69,6 @@ class _HomeState extends State<Home> {
                               color: Colors.white,
                               fontWeight: FontWeight.w500),
                         ),
-                        padding: EdgeInsets.only(left: 6, top: 1),
                         height: 20,
                         width: 20,
                         decoration: BoxDecoration(
