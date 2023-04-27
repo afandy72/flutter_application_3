@@ -111,6 +111,7 @@ class _HomeState extends State<Home> {
           Image.asset(
             "assets/img/299850199_439821258168815_7602401598176668923_n.jpg",
             height: MediaQuery.of(context).size.height * 0.40,
+            fit: BoxFit.cover,
             width: double.infinity,
           ),
           SizedBox(
@@ -257,15 +258,18 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-          Row(
-            children: [
-              CircleAvatar(
-                radius: 12,
-                backgroundImage: AssetImage(
-                  "assets/img/WhatsApp Image 2023-04-26 at 12.38.25 PM.jpeg",
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Row(
+              children: [
+                CircleAvatar(
+                  radius: 12,
+                  backgroundImage: AssetImage(
+                    "assets/img/WhatsApp Image 2023-04-26 at 12.38.25 PM.jpeg",
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           )
         ],
       ),
